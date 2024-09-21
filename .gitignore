@@ -54,3 +54,13 @@ yarn-error.log
 
 plugins/
 *.gitconfig
+
+# Lazynvim
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
