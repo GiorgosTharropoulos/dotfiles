@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/$HOME/.local/share:$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH:/opt/nvim-linux64/bin:$PATH
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.local/share:$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/opt/nvim-linux64/bin:/opt/jq/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -115,7 +115,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+#
+alias v="nvim"
+alias ll='ls -alF'
+#
 # fzf
 source <(fzf --zsh)
 
