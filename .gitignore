@@ -52,7 +52,6 @@ yarn-error.log
 #########################
 .env
 
-plugins/
 *.gitconfig
 
 # Lazynvim
@@ -64,3 +63,6 @@ debug
 foo.*
 *.log
 data
+.config/github-copilot
+.config/tmux/plugins
+
