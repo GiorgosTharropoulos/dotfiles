@@ -81,6 +81,7 @@ plugins=(
   git
   fnm
   web-search
+  pnpm-shell-completion
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
