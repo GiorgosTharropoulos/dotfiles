@@ -69,3 +69,7 @@ data
 .config/BraveSoftware/Brave-Browser
 .config/FortiClient/users
 .config/pulse
+.config/1Password
+.config/dconf
+.config/qalculate
+.config/mimeapps.list
