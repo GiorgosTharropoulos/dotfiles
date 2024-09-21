@@ -66,3 +66,6 @@ data
 .config/github-copilot
 .config/tmux/plugins
 
+.config/BraveSoftware/Brave-Browser
+.config/FortiClient/users
+.config/pulse
