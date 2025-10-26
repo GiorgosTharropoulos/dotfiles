@@ -230,7 +230,7 @@ main() {
     echo
 
     # Check if running non-interactively (Docker environment)
-    if [ -t 0 ] && [ "$1" != "--non-interactive" ]; then
+    if [ -t 0 ] && [ "${1:-}" != "--non-interactive" ]; then
         read -p "Do you want to continue? (y/N): " -n 1 -r
         echo
         if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -275,7 +275,7 @@ main() {
     echo "  plugins=(git fzf fzf-tab zsh-autosuggestions zsh-syntax-highlighting zsh-completions)"
 }
 
-# Check if script is being run directly
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+# Check if script is being run directly or sourced
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]] || [[ "${BASH_SOURCE:-}" != "" ]]; then
     main "$@"
 fi
