@@ -19,8 +19,8 @@ RUN useradd -m -s /bin/zsh appuser && \
 # Set working directory
 WORKDIR /work
 
-# Copy dotfiles and scripts
-COPY . .
+# Copy setup scripts
+COPY setup-host/. .
 
 # Change ownership of all files to appuser
 RUN chown -R appuser:appuser /work
@@ -30,8 +30,12 @@ USER appuser
 WORKDIR /home/appuser
 
 # Make the install script executable and run it
-RUN chmod +x /work/setup.sh && \
-    /work/setup.sh --non-interactive
+RUN chmod +x /work/executable_setup.sh && \
+    /work/executable_setup.sh --non-interactive
+
+# Copy dotfiles from parent directory
+COPY dot_zshrc /work/dot_zshrc
+COPY dot_config/ /work/dot_config/
 
 # Copy custom .zshrc after oh-my-zsh is installed
 RUN cp /work/dot_zshrc /home/appuser/.zshrc && \
