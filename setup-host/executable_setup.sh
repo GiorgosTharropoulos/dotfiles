@@ -114,6 +114,17 @@ install_lazygit() {
     rm -rf lazygit
 }
 
+# Install chezmoi
+install_chezmoi() {
+    print_status "Installing chezmoi..."
+    local chezmoi_version="2.66.1"
+    local deb_file="chezmoi_${chezmoi_version}_linux_amd64.deb"
+
+    curl -LO "https://github.com/twpayne/chezmoi/releases/download/v${chezmoi_version}/${deb_file}"
+    sudo dpkg -i "$deb_file"
+    rm -f "$deb_file"
+}
+
 # Install nvm
 install_nvm() {
     print_status "Installing nvm..."
@@ -195,7 +206,7 @@ install_oh_my_zsh_plugins() {
     # Install zsh-chezmoi
     if [ ! -d "$zsh_custom/plugins/zsh-chezmoi" ]; then
         print_status "Installing zsh-chezmoi plugin..."
-        git clone https://github.com/mass8326/zsh-chezmoi.git $ZSH_CUSTOM/plugins/chezmoi
+        git clone https://github.com/mass8326/zsh-chezmoi.git "$zsh_custom/plugins/chezmoi"
     else
         print_warning "zsh-chezmoi plugin already exists. Skipping..."
     fi
@@ -211,6 +222,7 @@ main() {
     echo "  - zoxide (smart directory navigation)"
     echo "  - bat (cat clone with syntax highlighting)"
     echo "  - lazygit (simple terminal UI for git)"
+    echo "  - chezmoi (dotfile management tool)"
     echo "  - nvm (Node Version Manager)"
     echo "  - tmux (terminal multiplexer)"
     echo "  - tmux plugin manager (tpm)"
@@ -241,6 +253,7 @@ main() {
     install_if_missing "zoxide" install_zoxide
     install_if_missing "bat" install_bat
     install_if_missing "lazygit" install_lazygit
+    install_if_missing "chezmoi" install_chezmoi
     install_if_missing "nvm" install_nvm
     install_if_missing "tmux" install_tmux
     install_if_missing "tmux" install_tpm
