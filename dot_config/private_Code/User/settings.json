@@ -1,0 +1,271 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.html": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "vscode-icons",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/DebugBuild": true,
+    "**/mkcdrom": true,
+    "**/vendors*": true,
+    "build/**": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.rulers": [
+    {
+      "column": 80
+    },
+    {
+      "column": 100
+    }
+  ],
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "\"JetBrainsMono NFM\"",
+  "files.trimFinalNewlines": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.tabCompletion": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.stickyScroll.enabled": true,
+  "bookmarks.experimental.enableNewStickyEngine": false,
+  "cSpell.userWords": [
+    "dagre",
+    "errormsg",
+    "forcerunning",
+    "heroicons",
+    "idint",
+    "isskip",
+    "listbox",
+    "nodegraph",
+    "noheader",
+    "reactflow",
+    "tanstack",
+    "testid",
+    "toastify"
+  ],
+  "workbench.sideBar.location": "right",
+  "window.commandCenter": true,
+  "editor.showFoldingControls": "always",
+  "vim.incsearch": true,
+  "vim.leader": " ",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
+  "vim.searchHighlightColor": "#f6ff0080",
+  "vim.searchHighlightTextColor": "#fff",
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "P"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "m", "p"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["ctrl+d"],
+      "after": ["ctrl+d", "z", "z"]
+    },
+    {
+      "before": ["ctrl+u"],
+      "after": ["ctrl+u", "z", "z"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["editor.emmet.action.balanceOut"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer",
+        "workbench.files.action.focusFilesExplorer"
+      ]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "w", "q"],
+      "commands": [
+        "workbench.action.files.save",
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "l", "a"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "w", "o"],
+      "commands": [":only"]
+    },
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "a"],
+      "commands": ["editor.action.revealDefinitionAside"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["<leader>", "g", "f"],
+      "commands": ["find-it-faster.findFiles"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["find-it-faster.findWithinFiles"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "vim.highlightedyank.enable": true,
+  "html.format.templating": true,
+  "editor.renderWhitespace": "none",
+  "vim.foldfix": true,
+  "javascript.preferences.renameMatchingJsxTags": false,
+  "typescript.preferences.renameMatchingJsxTags": false,
+  "window.menuBarVisibility": "toggle",
+  "debug.inlineValues": "on",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "gitlens.graph.layout": "editor",
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "typescript.tsserver.log": "off",
+  "vitest.maximumConfigs": 15,
+  "find-it-faster.general.useTerminalInEditor": true,
+  "editor.formatOnSave": true,
+  "workbench.editor.revealIfOpen": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": true,
+  "window.customTitleBarVisibility": "auto",
+  "diffEditor.renderSideBySide": true,
+  "gitlens.autolinks": [
+    {
+      "prefix": "VOV-",
+      "url": "https://altairengineering.atlassian.net/browse/VOV-<num>"
+    }
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist/**/*.d.ts*": true
+  },
+  "editor.accessibilitySupport": "off",
+  "[cpp]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "fileHistory": false,
+    "repositories": true,
+    "searchAndCompare": true,
+    "launchpad": false
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "biome.suggestInstallingGlobally": false,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.virtualRepositories.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "gitlens.ai.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "window.newWindowProfile": "Default",
+  "github.copilot.enable": {
+    "*": false,
+    "cpp": true,
+    "python": true,
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "docker.extension.enableComposeLanguageServer": false,
+  "gitlens.plusFeatures.enabled": false,
+  "python.defaultInterpreterPath": "/bin/python3"
+}
