@@ -76,7 +76,6 @@ plugins=(
 	fzf-tab
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	zsh-completions
 	zoxide
 	nvm
 	chezmoi

@@ -192,14 +192,6 @@ install_oh_my_zsh_plugins() {
         print_warning "zsh-syntax-highlighting plugin already exists. Skipping..."
     fi
 
-    # Install zsh-completions
-    if [ ! -d "$zsh_custom/plugins/zsh-completions" ]; then
-        print_status "Installing zsh-completions plugin..."
-        git clone https://github.com/zsh-users/zsh-completions.git "$zsh_custom/plugins/zsh-completions"
-    else
-        print_warning "zsh-completions plugin already exists. Skipping..."
-    fi
-
     # Install zsh-chezmoi
     if [ ! -d "$zsh_custom/plugins/zsh-chezmoi" ]; then
         print_status "Installing zsh-chezmoi plugin..."
