@@ -115,3 +115,4 @@ fpath=($HOME/.zsh-complete $fpath)
 # alias zshconfig="mate $HOME/.zshrc"
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 alias cd="z"
+alias ls="ls -la"
