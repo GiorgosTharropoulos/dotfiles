@@ -1,0 +1,4 @@
+# Chezmoi ignore patterns (independent from .gitignore)
+
+# JS/Bun deps should never be managed/applied
+**/node_modules/**

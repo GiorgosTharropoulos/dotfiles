@@ -1,0 +1,20 @@
+{
+  "name": "ocr",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build --compile --outfile=../../../bin/ocr index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/tesseract.js": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "ora": "^9.1.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
