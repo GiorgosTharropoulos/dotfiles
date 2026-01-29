@@ -118,3 +118,10 @@ alias cd="z"
 alias ls="ls -la"
 
 export AAP_TOP=$HOME/proj
+
+# bun completions
+[ -s "/home/giorgos/.bun/_bun" ] && source "/home/giorgos/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

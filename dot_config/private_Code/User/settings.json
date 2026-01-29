@@ -209,25 +209,16 @@
   "diffEditor.ignoreTrimWhitespace": true,
   "typescript.tsserver.log": "off",
   "vitest.maximumConfigs": 15,
-  "find-it-faster.general.useTerminalInEditor": true,
   "editor.formatOnSave": true,
   "workbench.editor.revealIfOpen": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.editor.editorActionsLocation": "titleBar",
   "zenMode.hideLineNumbers": false,
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
   "window.customTitleBarVisibility": "auto",
   "diffEditor.renderSideBySide": true,
-  "gitlens.autolinks": [
-    {
-      "prefix": "VOV-",
-      "url": "https://altairengineering.atlassian.net/browse/VOV-<num>"
-    }
-  ],
   "search.exclude": {
     "**/node_modules": true,
-    "**/bower_components": true,
     "**/*.code-search": true,
     "**/dist/**/*.d.ts*": true
   },
@@ -250,22 +241,25 @@
     "searchAndCompare": true,
     "launchpad": false
   },
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Nord",
   "biome.suggestInstallingGlobally": false,
   "git.openRepositoryInParentFolders": "always",
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.virtualRepositories.enabled": false,
   "gitlens.telemetry.enabled": false,
-  "gitlens.ai.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
   "window.newWindowProfile": "Default",
   "github.copilot.enable": {
-    "*": false,
-    "cpp": true,
-    "python": true,
+    "*": true
   },
   "terminal.integrated.defaultProfile.linux": "bash",
   "docker.extension.enableComposeLanguageServer": false,
-  "gitlens.plusFeatures.enabled": false,
-  "python.defaultInterpreterPath": "/bin/python3"
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.blame.editorDecoration.enabled": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "gitlens.mode.active": "zen"
 }
